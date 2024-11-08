@@ -1,0 +1,193 @@
+* *::after ::before {
+   margin: 0;
+}
+h1,h2,p {
+   margin: 0;
+}
+
+body{
+   background-color: #272b30;
+}
+.play-details{
+background-color: #272b30 ;
+}
+.w-90{
+   width: 90%;
+}
+.smallBackground{
+   background-image:url(../images/wraper.png);
+   background-color:rgba(0,0,0,);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 200px;
+
+}
+.loding-page{
+   inset: 0;
+   position: absolute;
+   background-color: rgb(177, 177, 177);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 99999;
+}
+.loding-page span{
+width: 70px;
+height: 70px;
+}
+.loader {
+   transform: rotateZ(45deg);
+   perspective: 1000px;
+   border-radius: 50%;
+   width: 48px;
+   height: 48px;
+   color: #fff;
+ }
+   .loader:before,
+   .loader:after {
+     content: '';
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: inherit;
+     height: inherit;
+     border-radius: 50%;
+     transform: rotateX(70deg);
+     animation: 1s spin linear infinite;
+   }
+   .loader:after {
+     color: #FF3D00;
+     transform: rotateY(70deg);
+     animation-delay: .4s;
+   }
+
+ @keyframes rotate {
+   0% {
+     transform: translate(-50%, -50%) rotateZ(0deg);
+   }
+   100% {
+     transform: translate(-50%, -50%) rotateZ(360deg);
+   }
+ }
+
+ @keyframes rotateccw {
+   0% {
+     transform: translate(-50%, -50%) rotate(0deg);
+   }
+   100% {
+     transform: translate(-50%, -50%) rotate(-360deg);
+   }
+ }
+
+ @keyframes spin {
+   0%,
+   100% {
+     box-shadow: .2em 0px 0 0px currentcolor;
+   }
+   12% {
+     box-shadow: .2em .2em 0 0 currentcolor;
+   }
+   25% {
+     box-shadow: 0 .2em 0 0px currentcolor;
+   }
+   37% {
+     box-shadow: -.2em .2em 0 0 currentcolor;
+   }
+   50% {
+     box-shadow: -.2em 0 0 0 currentcolor;
+   }
+   62% {
+     box-shadow: -.2em -.2em 0 0 currentcolor;
+   }
+   75% {
+     box-shadow: 0px -.2em 0 0 currentcolor;
+   }
+   87% {
+     box-shadow: .2em -.2em 0 0 currentcolor;
+   }
+ }
+
+.navbar1{
+ 
+   width: 100%;
+   position: sticky;
+   top: 0;
+   transform: translateY(-50%);
+   z-index: 9999;
+}
+.navbar {
+   background-color: #3a497b;
+
+}
+.navbar h2  {
+color: white;
+}
+.navbar a {
+color: white;
+}
+
+.logNav .logo {
+   width: 30px;
+}
+.logNav .navbar-brand {
+   font-size:22px ;
+   font-family:"Nerko One", cursive;
+   font-weight: 600;}
+
+
+.navbar-nav a{
+font-size:15px ;
+font-family: "Caveat Brush", cursive;
+font-weight: 400;
+}
+.navbar-nav .mmorpg{
+color: #098cbf;
+}
+.navbar-nav a:hover.nav-link {
+color: #098cbf;
+}
+.cards .card .img {
+   position: relative;
+  
+}
+.cards .card .disc {
+   overflow: hidden;
+   height: 90px;
+}
+#cards {
+   box-sizing: border-box;
+   display:flex;
+   flex-wrap: wrap;
+}
+.cards .card .img .layer {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.cards .card:hover .layer {
+
+  background-color: transparent;
+}
+.cards .card:hover.card {
+
+transform: scale(1.05);
+transition: all 1s;
+}
+.cards .card {
+   background-color: #272b30;
+}
+.cards .card .sale-btn {
+   background-color:#243d90;
+}
+.cards .card:hover .sale-btn {
+   background-color:blue;
+}
+.cards .card  .card-footer .left-footer,.right-footer{
+   background-color: #5c4b52;
+}
+
+.partition .span{
+
+}
